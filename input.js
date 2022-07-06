@@ -1,3 +1,4 @@
+const { connect } = require("http2");
 const { stdin } = require("process");
 
 let connection;
@@ -25,6 +26,8 @@ const handleUserInput = function () {
       connection.write("Move: left")
     } else if (key === "s") {
       connection.write("Move: down")
+    } else if (key === "o") {
+      connection.write("Say: LATER!")
     }
   })
 };
