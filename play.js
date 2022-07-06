@@ -4,9 +4,9 @@ const { setupInput } = require("./input");
 const { stdin } = require("process");
 
 
-connect();
 
-setupInput();
+
+setupInput(connect());
 
 // establishes a connection with the game server
 
